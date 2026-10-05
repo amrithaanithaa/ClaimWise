@@ -13,7 +13,7 @@ env/
 
 # Large dataset files
 data/*.csv
-
+data/*.db
 # Vector databases / generated files
 chroma_db/
 vector_db/
