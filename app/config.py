@@ -15,3 +15,23 @@ DATA_PATH = Path(
 POLICY_DOCUMENT_PATH = Path(
     os.getenv("POLICY_DOCUMENT_PATH", "data/policy_documents")
 )
+
+CHROMA_PATH = Path(
+    os.getenv("CHROMA_PATH", "chroma_db")
+)
+
+# Collection name must be a string
+COLLECTION_NAME = os.getenv(
+    "COLLECTION_NAME",
+    "claimwise_policies"
+)
+
+# Embedding model name must be a string
+EMBEDDING_MODEL = os.getenv(
+    "EMBEDDING_MODEL",
+    "all-MiniLM-L6-v2"
+)
+
+#OpenAI
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
